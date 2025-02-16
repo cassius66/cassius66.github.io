@@ -1,8 +1,36 @@
+@font-face {
+    font-family: 'Gotham Nights';
+    src: url('../assets/fonts/gotham-nights/gotham-nights.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Nights';
+    src: url('../assets/fonts/gotham-nights/gotham-nights-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Nights';
+    src: url('../assets/fonts/gotham-nights/gotham-nights-italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gotham Nights';
+    src: url('../assets/fonts/gotham-nights/gotham-nights-bold-italic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --text-color: #333;
-    --background-color: #f9f9f9;
+    --primary-color: #ffffff;
+    --secondary-color: #888888;
+    --text-color: #ffffff;
+    --background-color: #1a1a1a;
 }
 
 * {
@@ -12,7 +40,7 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Gotham Nights', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -35,96 +63,47 @@ header {
     height: 180px;
     object-fit: cover;
     margin-bottom: 1.5rem;
-    border: 3px solid var(--secondary-color);
+    border: 3px solid var(--primary-color);
+    filter: contrast(1.2) brightness(0.9);
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 4px;
+    font-weight: bold;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 3rem;
     margin: 2rem 0;
 }
 
 .social-links a {
     color: var(--primary-color);
     text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    transition: color 0.3s ease;
+    justify-content: center;
 }
 
 .social-links a:hover {
     color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: scale(1.1) rotate(5deg);
 }
 
-.blog-section {
-    margin-top: 4rem;
-}
-
-.blog-grid {
-    max-width: 800px;
-    margin: 2rem auto 0;
-}
-
-.blog-card {
-    margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #eee;
-}
-
-.blog-card:last-child {
-    border-bottom: none;
-}
-
-.blog-content {
-    padding: 0;
-}
-
-.blog-title {
-    font-size: 1.75rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    text-decoration: none;
-    display: block;
-}
-
-.blog-title:hover {
-    color: var(--secondary-color);
-}
-
-.blog-date {
-    font-size: 0.875rem;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-.blog-excerpt {
-    color: #555;
-    margin-bottom: 1rem;
-}
-
-.read-more {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.read-more:hover {
-    text-decoration: underline;
-}
-
-.blog-excerpt {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #555;
-    margin: 1rem 0;
+.social-links svg {
+    width: 32px;
+    height: 32px;
 }
 
 @media (max-width: 768px) {
@@ -137,14 +116,15 @@ h1 {
     }
     
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
-    .blog-title {
-        font-size: 1.5rem;
+    .social-links {
+        gap: 2rem;
     }
     
-    .blog-excerpt {
-        font-size: 1rem;
+    .social-links svg {
+        width: 28px;
+        height: 28px;
     }
 }
