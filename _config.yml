@@ -1,0 +1,13 @@
+title: cassius66
+description: Personal website and blog
+url: "https://cassius66.com"  # Replace with your actual domain
+markdown: kramdown
+
+# Clean URL format for posts
+permalink: /posts/:title/
+
+# Enable projects collection
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
