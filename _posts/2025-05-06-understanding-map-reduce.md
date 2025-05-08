@@ -5,7 +5,7 @@ date: 2025-05-06
 tags: [distributed computing, python, big data]
 ---
 
-# Understanding MapReduce
+# Understanding MapReduce - A Deeper Understanding Of Distributed Computing
 
 MapReduce is a programming model designed for processing and generating large datasets. In this post, I'll explain the core concepts and show a simple implementation.
 
