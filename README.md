@@ -6,7 +6,6 @@ Personal website and blog powered by Jekyll and GitHub Pages.
 
 This site uses Jekyll, a static site generator that's built into GitHub Pages. The structure follows Jekyll conventions:
 
-
 ## Adding Content
 
 ### Adding a New Blog Post
@@ -76,6 +75,3 @@ Page content here...
 ```
 
 3. Add a link to the page in the navigation menu in `_layouts/default.html`
-
-
-
