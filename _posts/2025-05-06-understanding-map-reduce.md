@@ -2,7 +2,7 @@
 layout: default
 title: Understanding MapReduce
 date: 2025-05-06
-tags: [distributed computing, python, big data]
+tags: [Python, Distributed Systems, Pyro4, MapReduce]
 ---
 
 # Understanding MapReduce - A Deeper Understanding Of Distributed Computing

@@ -129,14 +129,14 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.tech-tags {
+.tech-tags, .post-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1rem;
 }
 
-.tech-tag {
+.tech-tag, .post-tag {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 0.25rem 0.75rem;
     border-radius: 1rem;
