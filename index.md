@@ -2,7 +2,9 @@
 layout: default
 ---
 
-Welcome to my personal website. I'm a software developer and distributed systems enthusiast.
+# Welcome
+
+I'm a software developer and distributed systems enthusiast.
 
 ## About Me
 
