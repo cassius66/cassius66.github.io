@@ -5,7 +5,7 @@ date: 2025-05-06
 tags: [Python, Distributed Systems, Pyro4, MapReduce]
 ---
 
-# Understanding MapReduce - A Deeper Understanding Of Distributed Computing
+# Understanding MapReduce
 
 MapReduce is a programming model designed for processing and generating large datasets. In this post, I'll explain the core concepts and show a simple implementation.
 
