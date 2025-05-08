@@ -1,30 +1,4 @@
-@font-face {
-    font-family: 'Gotham Nights';
-    src: url('../assets/fonts/gotham-nights/gotham-nights.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Nights';
-    src: url('../assets/fonts/gotham-nights/gotham-nights-bold.otf') format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Nights';
-    src: url('../assets/fonts/gotham-nights/gotham-nights-italic.otf') format('opentype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Gotham Nights';
-    src: url('../assets/fonts/gotham-nights/gotham-nights-bold-italic.otf') format('opentype');
-    font-weight: bold;
-    font-style: italic;
-}
+/* Using system fonts instead of custom fonts */
 
 :root {
     --primary-color: #ffffff;
@@ -40,7 +14,7 @@
 }
 
 body {
-    font-family: 'Gotham Nights', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
