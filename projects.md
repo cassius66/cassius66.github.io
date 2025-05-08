@@ -1,6 +1,7 @@
-______________________________________________________________________
-
-## layout: default title: Projects
+---
+layout: default
+title: Projects
+---
 
 # Projects
 

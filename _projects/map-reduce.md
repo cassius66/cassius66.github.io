@@ -1,6 +1,10 @@
-______________________________________________________________________
-
-## layout: default title: MapReduce Implementation external_url: https://github.com/cassius66/map-reduce description: A distributed computing implementation of the MapReduce protocol using Python and Pyro4 for network communication. technologies: [Python, Distributed Systems, Pyro4, MapReduce]
+---
+layout: default
+title: MapReduce Implementation
+external_url: https://github.com/cassius66/map-reduce
+description: A distributed computing implementation of the MapReduce protocol using Python and Pyro4 for network communication.
+technologies: [Python, Distributed Systems, Pyro4, MapReduce]
+---
 
 # MapReduce Implementation
 

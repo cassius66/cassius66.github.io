@@ -1,6 +1,6 @@
-______________________________________________________________________
-
-## layout: default
+---
+layout: default
+---
 
 Welcome to my personal website. I'm a software developer and distributed systems enthusiast.
 
