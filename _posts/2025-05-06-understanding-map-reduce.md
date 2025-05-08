@@ -2,7 +2,7 @@
 layout: default
 title: Understanding MapReduce
 date: 2025-05-06
-tags: [Python, Distributed Systems, Pyro4, MapReduce]
+tags: [Python, MapReduce]
 ---
 
 # Understanding MapReduce
