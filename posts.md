@@ -3,7 +3,7 @@ layout: default
 title: Posts
 ---
 
-# Posts
+## Posts
 
 <div class="posts-list">
   {% for post in site.posts %}
