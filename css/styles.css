@@ -106,6 +106,141 @@ h1 {
     height: 32px;
 }
 
+/* Blog and Projects Styles */
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.main-nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    border-bottom-color: var(--secondary-color);
+}
+
+/* Projects List */
+.projects-list, .posts-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-item, .post-item {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.project-item h2, .post-item h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-item h2 a, .post-item h2 a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.post-date {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+}
+
+.read-more {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--secondary-color);
+}
+
+/* Blog Post Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 0;
+}
+
+main blockquote {
+    border-left: 4px solid var(--secondary-color);
+    padding-left: 1rem;
+    margin: 2rem 0;
+    font-style: italic;
+}
+
+main code {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+main pre {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+main th, main td {
+    padding: 0.5rem;
+    border: 1px solid var(--secondary-color);
+    text-align: left;
+}
+
+main th {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    color: var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
         padding: 1rem;
@@ -126,5 +261,15 @@ h1 {
     .social-links svg {
         width: 28px;
         height: 28px;
+    }
+    
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .project-item h2, .post-item h2 {
+        font-size: 1.5rem;
     }
 }
