@@ -205,6 +205,12 @@ main th {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* better list elements */
+
+ol li, ul li {
+    list-style-position: inside;
+}
+
 /* Footer */
 footer {
     text-align: center;
