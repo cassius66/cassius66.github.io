@@ -38,12 +38,3 @@ MapReduce enables:
 - **Simplicity** - Abstract away distributed computing complexities
 
 > "MapReduce allows programmers without distributed systems experience to utilize the resources of a large distributed system." — Google Research Paper
-
-## Performance Comparison
-
-| Dataset Size | Single Machine | MapReduce Cluster |
-|--------------|---------------|-------------------|
-| 1GB          | 10 minutes    | 1 minute          |
-| 10GB         | 2 hours       | 5 minutes         |
-| 100GB        | Days          | 30 minutes        |
-
