@@ -3,11 +3,7 @@ layout: default
 title: Links
 ---
 
-# cassius66
-
-![me](/assets/images/jpg.jpg)
-
-## Links
+# Links
 
 - [GitHub](https://github.com/cassius66)
 - [X/Twitter](https://twitter.com/_cassius66)
