@@ -2,15 +2,7 @@ title: cassius66
 description: Personal website
 url: "https://cassius66.com"
 markdown: kramdown
-
-# Posts configuration
 permalink: /posts/:title/
 
-# Exclude from build
 exclude:
-  - proposals/
-  - test-preview/
-  - test-option-2/
-  - test-option-3/
-  - .backup-*/
-  - README.md
+  - .archive-old-site/
