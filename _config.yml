@@ -1,13 +1,16 @@
 title: cassius66
-description: Personal website and blog
-url: "https://cassius66.com"  # Replace with your actual domain
+description: Personal website
+url: "https://cassius66.com"
 markdown: kramdown
 
-# Clean URL format for posts
+# Posts configuration
 permalink: /posts/:title/
 
-# Enable projects collection
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
+# Exclude from build
+exclude:
+  - proposals/
+  - test-preview/
+  - test-option-2/
+  - test-option-3/
+  - .backup-*/
+  - README.md
