@@ -18,6 +18,9 @@
         </header>
 
         <main>
+            {% if page.date %}
+            <p><strong>{{ page.date | date: "%Y-%m-%d" }}</strong></p>
+            {% endif %}
             {{ content }}
         </main>
 
