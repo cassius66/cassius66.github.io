@@ -40,12 +40,6 @@ assets/images/            images referenced by posts
 Jekyll on GitHub Pages. One layout, one stylesheet, no JavaScript, no theme
 gem, no plugins.
 
-## Not Done
-
-- No tags, categories or search. Two posts do not need an index.
-- No RSS feed.
-- No comments.
-
 ## License
 
 The Unlicense. Public domain.
