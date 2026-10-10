@@ -6,33 +6,9 @@ date: 2026-10-10
 
 # Wizard, An Omarchy Theme
 
-Wizard is a theme for [Omarchy](https://omarchy.org). The idea is Gandalf the
-Grey on a 1990s workstation: slate blue-grey on near black, one wallpaper, and
-pixel art icons.
+Wizard is my theme for Omarchy[1], every color is a gray except one blue for the accent and a red for errors, there is one wallpaper with the Omarchy wordmark, and the icons are Papirus[2] redrawn as pixel art.
 
-![The Wizard wallpaper](/assets/images/wizard-wallpaper.png)
-
-The wallpaper is Omarchy's own pixel wordmark in two colours, `#738eb9` on
-`#10141b`. The terminal palette is greys, with red kept for errors.
-
-![The Apps menu under Wizard](/assets/images/wizard-menu.png)
-
-The icons come from [papirus-pixel](https://github.com/cassius66/papirus-pixel),
-a fork of Papirus. A script renders each of its 20,989 drawings, snaps it to a
-24 by 24 grid, moves every pixel to the nearest colour of the 16 colour
-[Sweetie 16](https://lospec.com/palette-list/sweetie-16) palette, and adds a 1
-pixel outline. GitHub rebuilds the set on every push that touches the icons, so new
-Papirus icons arrive with a merge.
-
-The icons keep their own colours instead of taking the theme's. With the
-theme's palette, blue folders turned grey and orange VLC turned red.
-
-Omarchy's Super+Space menu does not ask the icon theme for app icons. It takes
-the first icon file with the right name under `~/.icons`, `~/.local/share/icons`
-or `/usr/share/icons`. The pixel set is installed alone in
-`~/.local/share/icons`, so it wins. Image Viewer still showed its old icon,
-because Omarchy names it `imv` and Papirus has no icon by that name. A short
-alias list in the fork fixes that.
+The icons come from papirus-pixel, my fork of Papirus. It draws every icon on a 24 pixel grid and moves each pixel to the nearest color of Sweetie 16[3], a 16 color palette. The icons keep their own colors, with the theme's palette every folder turned gray. The fork rebuilds itself when Papirus changes, so new icons arrive with a merge.
 
 To install it:
 
@@ -42,6 +18,12 @@ curl -fsSL https://raw.githubusercontent.com/cassius66/papirus-pixel/master/pixe
 omarchy theme install https://github.com/cassius66/omarchy-wizard-theme
 ```
 
-The theme is at
-[cassius66/omarchy-wizard-theme](https://github.com/cassius66/omarchy-wizard-theme),
-public domain. The icons are GPL 3.0, as Papirus is.
+The theme is public domain, at [cassius66/omarchy-wizard-theme](https://github.com/cassius66/omarchy-wizard-theme), and the icons are GPL 3.0, as Papirus is, at [cassius66/papirus-pixel](https://github.com/cassius66/papirus-pixel).
+
+## References
+
+[1] [Omarchy](https://omarchy.org)
+
+[2] [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+
+[3] GrafxKid, [Sweetie 16](https://lospec.com/palette-list/sweetie-16)
