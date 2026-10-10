@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Wizard, An Omarchy Theme
+title: Omarchy Wizard Theme
 date: 2026-10-10
 ---
 
-# Wizard, An Omarchy Theme
+# Omarchy Wizard Theme
 
 Wizard is my theme for Omarchy[1], every color is a gray except one blue for the accent and a red for errors, there is one wallpaper with the Omarchy wordmark, and the icons are Papirus[2] redrawn as pixel art.
 
