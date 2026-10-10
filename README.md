@@ -4,9 +4,7 @@ Personal website and blog. Jekyll, served by GitHub Pages at cassius66.com.
 
 ## Why
 
-Somewhere to publish the writing that is finished. Entries are drafted in
-my-wiki and copied here once they are ready to be read by someone else, so
-this repo holds only the published surface and never the working notes.
+Somewhere to publish finished writing.
 
 ## Setup
 
@@ -18,8 +16,7 @@ bundle exec jekyll serve    # optional local preview
 ```
 
 A post is a file in `_posts/` named `YYYY-MM-DD-slug.md`, with frontmatter
-carrying `layout: default`, `title:` in Title Case and `date:` in ISO form.
-The naming matches `my-wiki/wiki/` exactly, so publishing is a copy.
+carrying `layout: default`, `title:` and `date:`.
 
 ## Structure
 
