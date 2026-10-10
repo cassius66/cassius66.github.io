@@ -8,7 +8,7 @@ date: 2026-10-10
 
 Wizard is my theme for Omarchy[1], every color is a gray except one blue for the accent and a red for errors, there is one wallpaper with the Omarchy wordmark, and the icons are Papirus[2] redrawn as pixel art.
 
-The icons come from papirus-pixel, my fork of Papirus. It draws every icon on a 24 pixel grid and moves each pixel to the nearest color of Sweetie 16[3], a 16 color palette. The icons keep their own colors, with the theme's palette every folder turned gray. The fork rebuilds itself when Papirus changes, so new icons arrive with a merge.
+The icons come from papirus-pixel, my fork of Papirus. It draws every icon on a 24 pixel grid and moves each pixel to the nearest color of Sweetie 16[3], a 16 color palette. The icons keep their own colors, since with the theme's palette every folder came out gray. The fork rebuilds itself when Papirus changes, so new icons arrive with a merge.
 
 To install it:
 
