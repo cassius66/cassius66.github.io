@@ -6,3 +6,5 @@ permalink: /posts/:title/
 
 exclude:
   - .archive-old-site/
+  - README.md
+  - LICENSE
