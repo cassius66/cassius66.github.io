@@ -3,6 +3,9 @@ description: Personal website
 url: "https://cassius66.com"
 markdown: kramdown
 permalink: /posts/:title/
+port: 4001
+livereload: true
+livereload_port: 35730
 
 exclude:
   - .archive-old-site/
