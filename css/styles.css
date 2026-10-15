@@ -1,9 +1,24 @@
+/* Design B properties: swap for glyph tokens. The same block, with the
+   same names, opens the stylesheets of Pi, www and the wiki. */
 :root {
-    --bg: #ffffff;
-    --text: #000000;
-    --link: #0000ee;
+    --ground: #eef2f7;
+    --ink: #10141b;
+    --accent: #0000ee;
     --visited: #551a8b;
-    --border: #000000;
+    --muted: #64718a;
+    --error: #a32425;
+    color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ground: #10141b;
+        --ink: #c9d1dc;
+        --accent: #738eb9;
+        --visited: #738eb9;
+        --muted: #64718a;
+        --error: #d9796f;
+    }
 }
 
 * {
@@ -16,8 +31,8 @@ body {
     font-family: "Courier New", Courier, monospace;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--text);
-    background-color: var(--bg);
+    color: var(--ink);
+    background-color: var(--ground);
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
@@ -50,7 +65,7 @@ p {
 }
 
 a {
-    color: var(--link);
+    color: var(--accent);
     text-decoration: underline;
 }
 
@@ -59,8 +74,8 @@ a:visited {
 }
 
 a:hover {
-    background-color: var(--text);
-    color: var(--bg);
+    background-color: var(--ink);
+    color: var(--ground);
 }
 
 nav {
@@ -86,23 +101,23 @@ img {
     height: auto;
     display: block;
     margin: 20px 0;
-    border: 2px solid var(--border);
+    border: 2px solid var(--ink);
 }
 
 code {
     font-family: "Courier New", Courier, monospace;
-    background-color: var(--text);
-    color: var(--bg);
+    background-color: var(--ink);
+    color: var(--ground);
     padding: 2px 5px;
 }
 
 pre {
-    background-color: var(--text);
-    color: var(--bg);
+    background-color: var(--ink);
+    color: var(--ground);
     padding: 15px;
     overflow-x: auto;
     margin: 1em 0;
-    border: 1px solid var(--border);
+    border: 1px solid var(--ink);
 }
 
 pre code {
@@ -113,13 +128,13 @@ pre code {
 blockquote {
     margin: 1em 0;
     padding-left: 1em;
-    border-left: 3px solid var(--border);
+    border-left: 3px solid var(--ink);
     font-style: italic;
 }
 
 hr {
     border: none;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid var(--ink);
     margin: 2em 0;
 }
 
@@ -135,7 +150,7 @@ table {
 }
 
 th, td {
-    border: 1px solid var(--border);
+    border: 1px solid var(--ink);
     padding: 8px;
     text-align: left;
 }
@@ -156,5 +171,11 @@ main {
 
     img {
         max-width: 150px;
+    }
+
+    /* A wide table scrolls inside itself, so the page never scrolls sideways. */
+    table {
+        display: block;
+        overflow-x: auto;
     }
 }
