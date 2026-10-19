@@ -1,7 +1,5 @@
 ---
-layout: default
+title: cassius66
 ---
 
-# cassius66
-
-![me](/assets/images/sleep-of-reason.png)
+Currently working on this site.
