@@ -10,3 +10,4 @@ exclude:
   - .archive-old-site/
   - README.md
   - LICENSE
+  - look.sh

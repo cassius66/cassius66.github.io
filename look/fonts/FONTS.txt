@@ -1,0 +1,14 @@
+# The look's web fonts. One line per file:
+# file sha256 licence source-sha256 source
+# Each woff2 is a subset of the upstream file whose sha256 follows its licence.
+grenze.woff2 75b5768fcbc2985276fa9939fb26801328652c0905756ae11384eab962a2df5a Grenze.OFL.txt 04afa4836bcd41e1ff9867a0dc27d628d31ddec618ec67715c526ebc3cae92f4 https://raw.githubusercontent.com/google/fonts/main/ofl/grenze/Grenze%5Bwght%5D.ttf
+grenze-italic.woff2 557785e246ff288cfef374d3325bf4cffca04f1aed7daf5986730bd95181e449 Grenze.OFL.txt 60e9821fff9603945d835a73257a743a8c6754fd3fda1e4329af50ea7e46f9c2 https://raw.githubusercontent.com/google/fonts/main/ofl/grenze/Grenze-Italic%5Bwght%5D.ttf
+grenze-gotisch.woff2 6663126fcdcd9797731b77268be2efa6e31609c1be91c9f7b79e10406211b41f GrenzeGotisch.OFL.txt 701b299d8dc002a2b4bea2ff0f1272c0e4081a2835914354804565c410d0c637 https://raw.githubusercontent.com/google/fonts/main/ofl/grenzegotisch/GrenzeGotisch%5Bwght%5D.ttf
+boecklins-mark.woff2 b789bcab92d63632506554e3f7963dd7813de54135a7153df7e0058e7ffa0300 BoecklinsUniverse.OFL.txt 5f6f6396edee3fa1fe9443258d7463f82e6b2512a03c5102a90295a095339fb5 Boecklins-Universe-by-Peter-Wiegel
+sancreek-mark.woff2 2e645f30314d36e8f94fcc47284a55e652bdbdeb99a2b91a1fe9eb9735ef46c9 Sancreek.OFL.txt 8f87c42f6e6ba97125cd975c3d7d48902fc227d805948e678d5293a300e3fe55 https://raw.githubusercontent.com/google/fonts/94faa589bee33697f0fe992a29dbd30790b3f4f4/ofl/sancreek/Sancreek-Regular.ttf
+jetbrains-mono.woff2 80739c450baeaf0fa4fc43af8aa9449d9e4e57152e15d00fa9b5f30604641301 JetBrainsMono.OFL.txt 48715a42ec242c21e9f02692891e147d022299a52e48d5e413e1a942193ffeda https://raw.githubusercontent.com/google/fonts/main/ofl/jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf
+Grenze.OFL.txt 55a21d1fcebfa5e02100db3ae4dcff2658e9ba63e0b64149203bf6a9d645db86 - - -
+GrenzeGotisch.OFL.txt bca29af2c3c9e142d11f523f414902ab8fb9ab8ffa3c34c63b6b72aa4e7d6acc - - -
+BoecklinsUniverse.OFL.txt 2d57569aa55506bb37630d35728754048d3faf961516719d2ee2fd6c6087bbad - - -
+Sancreek.OFL.txt 69f01b79c1be37a734736a94a12c55cb28d09ee93e4febc9db109cec608f9ae7 - - -
+JetBrainsMono.OFL.txt b2fe5e8987594e9ffd1d2ca52a2f5d73eb8335243893c5d6254b5ad69269591d - - -

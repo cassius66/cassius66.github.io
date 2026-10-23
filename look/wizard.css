@@ -1,0 +1,121 @@
+/* The look 1.1.0: colors, faces and base text, built from its
+   design tokens by Style Dictionary 5.6.0. Do not edit; change the tokens. */
+
+/* Text Grenze, the mark and titles Grenze Gotisch, codes JetBrains Mono. */
+
+:root {
+  color-scheme: light dark;
+  --ground: #dfe4eb;
+  --paper: #eef2f7;
+  --raised: #d2d8e1;
+  --ink: #10141b;
+  --muted: #4f5a6d;
+  --rule: #aab3c0;
+  --link: #0000ee;
+  --visited: #551a8b;
+  --mark: #990000;
+  --panel: #10141b;
+  --panel-ink: #dfe4eb;
+  --panel-muted: #8a96aa;
+  --panel-link: #6c9aff;
+  --panel-mark: #ff6666;
+  --f-main: "Wizard Text", "Noto Serif", Georgia, serif;
+  --f-mark: "Wizard Mark", "Wizard Text", "Noto Serif", Georgia, serif;
+  --f-wood: "Wizard Echo Wood", var(--f-mark);
+  --f-psych: "Wizard Echo Psych", var(--f-mark);
+  --f-mono: "Wizard Code", ui-monospace, monospace;
+  --w-text: 400; --w-strong: 600; --w-mark: 800;
+  --t-small: 14px; --l-small: 21px;
+  --t-body: 18px; --l-body: 28px;
+  --t-head: 24px; --l-head: 28px;
+  --t-title: 32px; --l-title: 42px;
+  --t-display: 40px; --l-display: 49px;
+  --t-poster: 56px; --l-poster: 63px;
+  --t-vertical: 72px; --l-vertical: 77px;
+  --t-hero: 144px; --l-hero: 154px;
+  --s-1: 7px; --s-2: 14px; --s-3: 21px; --s-4: 28px; --s-5: 42px; --s-6: 56px; --s-7: 84px; --s-8: 112px;
+  --rule-hair: 1px; --rule-firm: 2px; --heavy: 6px;
+  --r-enclosure: 6px; --r-round: 50%;
+  --step: 336ms; --steps: steps(1, end);
+}
+
+/* The dark half follows the device, and data-theme on the root sets it by hand. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #10141b;
+    --paper: #171c25;
+    --raised: #1b212b;
+    --ink: #c9d1dc;
+    --muted: #8a96aa;
+    --rule: #2e3542;
+    --link: #6c9aff;
+    --visited: #b67cff;
+    --mark: #ff6666;
+    --panel: #1b212b;
+    --panel-ink: #c9d1dc;
+    --panel-muted: #8a96aa;
+    --panel-link: #6c9aff;
+    --panel-mark: #ff6666;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #10141b;
+  --paper: #171c25;
+  --raised: #1b212b;
+  --ink: #c9d1dc;
+  --muted: #8a96aa;
+  --rule: #2e3542;
+  --link: #6c9aff;
+  --visited: #b67cff;
+  --mark: #ff6666;
+  --panel: #1b212b;
+  --panel-ink: #c9d1dc;
+  --panel-muted: #8a96aa;
+  --panel-link: #6c9aff;
+  --panel-mark: #ff6666;
+}
+:root[data-theme="light"] { color-scheme: light; }
+
+@media (max-width: 720px) {
+  :root { --t-title: 24px; --l-title: 28px; --t-display: 32px; --l-display: 42px; --t-poster: 40px; --l-poster: 49px; --t-vertical: 40px; --l-vertical: 49px; --t-hero: 72px; --l-hero: 77px; --heavy: 4px; }
+}
+
+/* Faces: each a subset beside this file, with its licence. The echoes are
+   for the mark's movement only, scaled so the word keeps its size. */
+@font-face { font-family: "Wizard Text"; src: url("fonts/grenze.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Wizard Text"; src: url("fonts/grenze-italic.woff2") format("woff2"); font-weight: 100 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Wizard Mark"; src: url("fonts/grenze-gotisch.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Wizard Echo Psych"; src: url("fonts/boecklins-mark.woff2") format("woff2"); font-display: swap; size-adjust: 91%; }
+@font-face { font-family: "Wizard Echo Wood"; src: url("fonts/sancreek-mark.woff2") format("woff2"); font-display: swap; size-adjust: 77.8%; }
+@font-face { font-family: "Wizard Code"; src: url("fonts/jetbrains-mono.woff2") format("woff2"); font-weight: 100 800; font-display: swap; }
+
+/* Base text: what every site shares. No layout. */
+
+:root { font-synthesis: none; }
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; background: var(--ground); }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font: var(--w-text) var(--t-body)/var(--l-body) var(--f-main);
+  font-kerning: normal; font-variant-numeric: oldstyle-nums proportional-nums;
+  overflow-wrap: break-word;
+}
+img, video { display: block; max-width: 100%; height: auto; }
+p, ul, ol, dl, pre, table, form, details, blockquote { margin: 0 0 var(--s-2); }
+p { text-wrap: pretty; }
+ul, ol { padding-left: var(--s-4); }
+li { margin: 0 0 var(--s-1); }
+h1, h2, h3, h4 { margin: 0; font-weight: var(--w-strong); text-wrap: balance; hyphens: manual; }
+b, strong { font-weight: var(--w-strong); }
+/* T25: links are underlined and blue, visited purple, the old web's own. */
+a { color: var(--link); text-decoration: underline 1px; text-underline-offset: 3px; }
+a:visited { color: var(--visited); }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+::selection { background: var(--link); color: var(--paper); }
+code, kbd, samp, pre, .hash { font-family: var(--f-mono); font-size: var(--t-small); line-height: var(--l-small); font-variant-ligatures: none; }
+code { overflow-wrap: anywhere; }
+pre { background: var(--paper); border: var(--rule-hair) solid var(--rule); padding: var(--s-2); overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; max-width: 100%; }
+hr { border: 0; border-top: var(--rule-hair) solid var(--rule); margin: var(--s-4) 0; }
+.num, td, time { font-variant-numeric: lining-nums tabular-nums; }

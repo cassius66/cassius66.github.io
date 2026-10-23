@@ -1,0 +1,37 @@
+/* The look 1.1.0: the mark, built from its
+   design tokens by Style Dictionary 5.6.0. Do not edit; change the tokens. */
+
+/* The mark: Fuzz or Pi, the word in its own red. Load it after wizard.css.
+
+   <a class="mark once" href="/" aria-label="Pi"><span class="m0" aria-hidden="true">Pi</span><span class="m1" aria-hidden="true">Pi</span><span class="m2" aria-hidden="true">Pi</span></a>
+
+   --mark-size sets its size; it is 56px unless a page says otherwise. */
+
+/* The mark: one word, three faces, hard cuts (M5, M7, M9). One pass on load
+   and one on hover, then it rests in the main face (M10, M12); each frame
+   holds 336 ms (M13). */
+.mark { display: inline-grid; color: var(--mark); text-decoration: none; line-height: 1; align-items: end; justify-items: start; }
+.mark:visited { color: var(--mark); }
+.mark > span { grid-area: 1 / 1; visibility: hidden; white-space: nowrap; font-size: var(--mark-size, 56px); }
+.mark .m0 { font-family: var(--f-mark); font-weight: var(--w-mark); visibility: visible; }
+.mark .m1 { font-family: var(--f-psych); }
+.mark .m2 { font-family: var(--f-wood); }
+.mark.once > span { animation-duration: calc(var(--step) * 4); animation-timing-function: steps(1, end); animation-iteration-count: 1; animation-fill-mode: both; animation-delay: var(--step); }
+.mark.once .m0 { animation-name: pass-0; }
+.mark.once .m1 { animation-name: pass-1; }
+.mark.once .m2 { animation-name: pass-2; }
+.mark.once:hover > span, .mark.once:focus-visible > span { animation-name: none; }
+.mark.once:hover .m0, .mark.once:focus-visible .m0 { animation-name: hover-0; animation-delay: 0ms; }
+.mark.once:hover .m1, .mark.once:focus-visible .m1 { animation-name: hover-1; animation-delay: 0ms; }
+.mark.once:hover .m2, .mark.once:focus-visible .m2 { animation-name: hover-2; animation-delay: 0ms; }
+@keyframes pass-0 { 0% { visibility: visible; } 25% { visibility: hidden; } 75% { visibility: visible; } 100% { visibility: visible; } }
+@keyframes pass-1 { 0% { visibility: hidden; } 25% { visibility: visible; } 50% { visibility: hidden; } 100% { visibility: hidden; } }
+@keyframes pass-2 { 0% { visibility: hidden; } 50% { visibility: visible; } 75% { visibility: hidden; } 100% { visibility: hidden; } }
+@keyframes hover-0 { 0% { visibility: visible; } 25% { visibility: hidden; } 75% { visibility: visible; } 100% { visibility: visible; } }
+@keyframes hover-1 { 0% { visibility: hidden; } 25% { visibility: visible; } 50% { visibility: hidden; } 100% { visibility: hidden; } }
+@keyframes hover-2 { 0% { visibility: hidden; } 50% { visibility: visible; } 75% { visibility: hidden; } 100% { visibility: hidden; } }
+@media (prefers-reduced-motion: reduce) {
+  .mark > span { animation: none !important; }
+  .mark .m0 { visibility: visible !important; }
+  .mark .m1, .mark .m2 { visibility: hidden !important; }
+}
