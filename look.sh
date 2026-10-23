@@ -9,5 +9,7 @@ tag="${1:-$(cat look/VERSION)}"
 rm -rf look
 mkdir -p look
 git -C "$LOOK_REPO" archive "$tag" look/dist/web | tar -x --strip-components=3 -C look
+# The page sets no mark, so it takes no mark stylesheet.
+rm -f look/mark.css
 echo "$tag" > look/VERSION
 echo "look is $tag"
